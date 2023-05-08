@@ -1,0 +1,22 @@
+<html>
+<head>
+<title> ass1</title>
+<script type="text/javascript">
+function disp()
+{
+var n=document.frm.n.value;
+for(i=0;i<10;i++)
+{
+ans=n*(i+1);
+document.write("<font size=30 color=blue>"+n+"*"+(i+1)+" = "+"<font color=red>"+ans+"<br></font></font>");
+}
+}
+</script>
+</head>
+<body>
+<form name=frm>
+<input type=text name=n><br>
+<input type=button onClick=disp() value="table of number">
+</form>
+</body>
+</html>
