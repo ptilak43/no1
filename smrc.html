@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Stock Market Returns Calculater</title>
+<script type="text/javascript">
+function disp()
+{
+var pamt=parseInt(document.f1.pamt.value);
+var rate=parseInt(document.f1.rate.value);
+var year=parseInt(document.f1.year.value);
+var i,ints;
+rate=rate/100;
+document.write("<br>");
+for(i=1;i<=year;i++)
+{
+ints=pamt*rate;
+pamt=pamt+ints;
+document.write("<br><font color=red>Interest Of Year"+i+" Is </font><font color=green>"+pamt+"</font><br>");
+}
+}
+</script>
+</head>
+<body bgcolor=lightblue>
+<br>
+<center><h2>Stock Market Returns Calculator</h2></center>
+<br><br>
+<form name=f1>
+<table>
+<tr><td>Enter The Investment Amount:<td><input type=text name=pamt></tr>
+<tr><td>Enter Rate Of Interest Per Year:<td><input type=text name=rate></tr>
+<tr><td>Enter Number Of Year To Invest:<td><input type=text name=year></tr>
+<tr><td><input type=button name=cal onClick=disp() value="Calculate"></tr>
+</table>
+</form>
+</body>
+</html>
